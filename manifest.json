@@ -1,0 +1,14 @@
+{
+  "name": "lazada-currency-covert",
+  "version": "1.0",
+  "description": "lazada-currency-covert-helper",
+  "permissions": ["storage", "tabs"],
+  "background": { "scripts": ["background.js"], "css": ["content.css"] },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "manifest_version": 2
+}
